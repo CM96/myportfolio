@@ -1,0 +1,57 @@
+@import 'variables';
+
+
+.contact{
+    min-height: calc(100vh - 25rem);
+    background-color: $overlay-color;
+    text-align:center;
+    padding:2rem 2.5rem;
+    .heading-primary{
+        text-align: center;
+        position: relative;
+        padding:1rem;
+        text-transform: uppercase;
+        color:$color-gray;
+        &:after{
+            content: " ";
+            height:3px;
+            width:10%;
+            position:absolute;
+            bottom:0;
+            left:45%;
+            background-color:$color-gray;
+        }
+    }
+    &__boxes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 1rem;
+
+        .contenu{
+            font-size:2rem;
+            padding: 1.5rem 2.5rem;
+            margin-top: 3rem;
+            transition: all .5s ease-in-out;
+            .icon{
+                background-color: $color-gray;
+                color:$overlay-color;
+                padding: 1rem;
+            }
+            .contact-info{
+                background-color: $overlay-color;
+                color:$color-gray;
+                padding: 1rem;
+                 border: 3px solid $color-gray;
+
+
+            }
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+
+    
+    
+}
+}

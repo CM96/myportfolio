@@ -1,0 +1,118 @@
+@import 'variables';
+.navigation{
+    &__button{
+        background-color:$color-gray;
+        height:7rem;
+        width:7rem;
+        position:fixed;
+        top:2.4rem;
+        left:2.4rem;
+        border-radius: 50%;
+        z-index: 7;
+        align-items: center;
+        padding:1rem;
+        text-align: center;
+        cursor: pointer;
+    }
+    &__background{
+        height:6rem;
+        width:6rem;
+        border-radius:50%;
+        position:fixed;
+        top:2.5rem;
+        left:2.5rem;
+        background-color:rgba($overlay-color, .7);
+        z-index: 5;
+        transition:all .6s ease-in-out;
+    }
+    &__nav{
+        height:100vh;
+        width:0;
+        position:fixed;
+        top:0;
+        left:-50rem;
+        z-index: 6;
+        opacity: 0;
+        transition:all .6s ease-in-out;
+
+    }
+    &__list{
+        position:absolute;
+        top:50%;
+        left:50%;
+         transform: translate(-50%, -50%);
+        list-style:none;
+        text-align:center;
+        width: 100%;
+        transition:all .3s ease-in-out;
+    }
+    &__item{
+        padding:1rem;
+    }
+    &__link{
+        &:link, &:visited{
+            display: inline-block;
+            padding: 1rem 1.2rem;
+            font-size:2.5rem;
+            color:$color-gray;
+            text-transform: uppercase;
+            font-weight: 600;
+            text-decoration:none;
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-gray 50%);
+            background-size: 235%;
+            transition:all .5s ease-in-out;
+            margin-left: 1.5rem;
+        }
+        &:hover, &:active{
+            background-position: 100%;
+            color:$overlay-color;
+            transform:translateX(1.5rem);
+        }
+    }
+    // change these property in js
+
+    .toggle{
+        transform: scale(80);//shows background of nav
+    }
+    .appear {
+        opacity: 1;
+        width:100%;//shows nav
+        left:0;
+    }
+    //ICON--HAMBURGER
+    &__icon{
+        position:relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        height:.5rem;
+        background-color: $overlay-color;
+        margin-top:2.4rem;
+        border-radius:.3rem;
+        transition:all .5s ease;
+        &:before,&:after{
+            content:"";
+            position: absolute;
+            top:-1rem;
+            width:100%;
+            background:inherit;
+            height:.5rem;
+            z-index:1;
+            border-radius:.3rem;
+            
+        }
+        &:after{
+            top:1rem;
+        }
+    }
+    .animate{
+        transform:rotate(135deg);
+    }
+    .animate:before,
+    .animate:after{
+        top:0;
+     transform:rotate(90deg);
+
+    }
+}

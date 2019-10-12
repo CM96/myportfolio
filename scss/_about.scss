@@ -1,0 +1,122 @@
+.about{
+    background-color: rgb(212, 212, 212);
+
+    .heading-primary{
+        text-align: center;
+        position: relative;
+        padding:1rem;
+        text-transform: uppercase;
+        color:$overlay-color;
+        &:after{
+            content: " ";
+            height:3px;
+            width:10%;
+            position:absolute;
+            bottom:0;
+            left:45%;
+            background-color:$overlay-color;
+        }
+    }
+    .bio{
+        position: relative;
+        background-color: rgb(212, 212, 212);
+        .bio-image{
+            height:20rem;
+            background-image: url(../images/suit_photo.jpg);
+            background-size:cover;
+            width:20rem;
+            border:.8rem solid $color-gray;
+        }
+        .bio-description{
+            @include sideBarGradient();
+            border-bottom:1.1rem solid $color-gray;
+            color:$color-gray;
+            width:65%;
+            position: absolute;
+            right:0;
+            top:0;
+            font-size: 1.7rem;
+            padding:1.3rem;
+            border-radius:2rem;
+        }
+        
+    }
+    .bio-boxes {
+        display:grid;
+        height:30rem;
+        display: grid;
+        color:$color-gray;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: minmax(20rem, auto);
+        grid-gap: 2rem;
+        padding:2rem;
+        .bio-box{
+            padding:1.5rem;
+            font-size:1.6rem;
+            .btn{
+                z-index:1000;
+               background-color: $color-gray;
+               font-size: 1.6rem;
+               &:hover{
+                    background-color: rgb(212, 212, 212);
+               }
+            }
+            &.bio-box--1{
+                @include sideBarGradient();
+                border-bottom:1.1rem solid $color-gray;
+                border-top-left-radius: 2rem;
+                border-bottom-left-radius: 2rem; 
+                animation: box-1_ani 1.4s;   
+            }
+            &.bio-box--2{
+                @include sideBarGradient();
+                border-bottom:1.1rem solid $color-gray;
+                animation: box-2_ani 1.4s;   
+            }
+            &.bio-box--3{
+                @include sideBarGradient();
+                border-bottom:1.1rem solid $color-gray;
+                border-top-right-radius: 2rem;
+                border-bottom-right-radius: 2rem;
+                animation: box-3_ani 1.4s;  
+            }
+        }
+    }
+    
+}
+.heading-tertiary{
+    position: relative;
+    display: inline-block;
+    &:not(first-child){
+      margin-bottom: 3rem;
+
+    }
+    &:after{
+        content:" ";
+        position: absolute;
+        width:35%;
+        height:.3rem;
+        bottom:-1rem;
+        left:0;
+        background-color:$color-gray;
+    }
+}
+.bio__list{
+    font-size:1.7rem;
+    margin-left:1.6rem;
+    margin-top:1.5rem;
+    list-style-type:circle;
+
+    .bio__item{
+        color:$color-gray;
+    }
+}
+a.btn{
+    padding:.8rem;
+    height:4rem;
+    font-size:1.6rem;
+    background-color:$color-gray;
+    &:hover{
+        background-color: rgb(212, 212, 212);
+    }
+} 

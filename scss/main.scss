@@ -1,0 +1,164 @@
+@import 'animations';
+@import 'menu_sidebar';
+@import 'portfolio';
+@import 'variables';
+@import 'about';
+@import 'aboutpopup';
+@import 'contact';
+
+
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+html,body {
+    height:100vh;
+    font-size:62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+.home{
+    font-size:1.7rem;
+    background-image: url(../images/leopardDRC2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:top;
+    height:100vh;
+    position:relative;
+    overflow-x: hidden;
+}
+.logo{
+    position:absolute;
+    top:10px;
+    right:0;
+    width:10rem;
+    height:10rem;
+}
+.content-text{
+    height:20%;
+    position:absolute;
+    top:20rem;
+    left:0;
+    padding:2rem;
+}
+.presentation{
+    font-size:1.8rem;
+    color:$color-gray;
+    .title__heading{
+         margin-left:.5rem;
+    }
+}
+//SCROLL BAR STYLES
+::-webkit-scrollbar {
+    width: 1rem;
+    }
+    /* Track */
+    ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius:.3rem;
+
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background:$color-gray; 
+    border-radius:.3rem;
+    }
+/* Main Content */
+
+.profile {
+    width:200px;
+    height:200px;
+    border:2px solid black;
+    border-radius: 80px;
+}
+
+.icons{
+   // margin-top:3rem;
+   padding:0;
+    a{
+        margin-top:1rem;
+        i{
+            margin-left:2rem;
+            color:$overlay-color;
+            &.fa-instagram:hover{
+                background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                
+            }
+            &.fa-facebook:hover{
+                color:#3B5998;   
+            }
+            &.fa-linkedin:hover{
+                color:#04669A;
+                
+            }
+            
+            &.fa-github:hover{
+                color:black;
+            }
+        }
+    }
+}
+
+.main-footer{
+    text-align: center;
+    background-color: rgba(black, .9);
+    color:white;
+    height:20rem;
+    padding:2rem;
+    font-size: 1.6rem;
+
+    .content{
+        // background-color:white;
+        position: relative;
+        border-bottom:2px solid $overlay-color;
+        .img-logo{
+            position: absolute;
+            left:0;
+            top:0;
+
+        }
+        .socials{
+            a{
+                margin-top:1rem;
+                padding:1rem;
+                i{
+                    // font-size:4rem;
+                    margin-left:2rem;
+                    color:$overlay-color;
+                    &.fa-instagram:hover{
+                        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        
+                    }
+                    &.fa-facebook:hover{
+                        color:#3B5998;   
+                    }
+                    &.fa-linkedin:hover{
+                        color:#04669A;
+                        
+                    }
+                    
+                    &.fa-github:hover{
+                        color:black;
+                    }
+                }
+            }
+        }
+    }
+    p{
+        margin-top: 4rem;
+        text-transform: uppercase;
+        color:$color-gray;
+    }
+    
+}
+//in the end
+@import 'mobile';
+

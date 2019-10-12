@@ -1,0 +1,31 @@
+//variables
+
+$color-gray:#888888;
+$overlay-color:#232526;
+@mixin sideBarGradient{
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526);
+}
+@mixin mediaSM {
+    @media screen and (max-width: 500px) {
+      @content;
+    }
+  }
+  @mixin mediaMD {
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin mediaLG {
+    @media screen and (min-width: 769px) and (max-width: 1170px) {
+      @content;
+    }
+  }
+  
+  @mixin mediaXL {
+    @media screen and (min-width: 1171px) {
+      @content;
+    }
+  }
