@@ -382,7 +382,7 @@ a.btn {
     opacity: 0; }
   .popup__content {
     width: 75%;
-    height: 50rem;
+    height: 75%;
     background-color: #232526;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
     border-radius: 2rem;
@@ -459,8 +459,12 @@ a.btn {
         color: #888888;
         padding: 1rem;
         border: 3px solid #888888; }
-      .contact__boxes .contenu:hover {
-        transform: scale(1.2); }
+      @media screen and (min-width: 769px) {
+        .contact__boxes .contenu:hover {
+          transform: scale(1.2); } }
+      @media screen and (max-width: 768px) {
+        .contact__boxes .contenu:hover {
+          transform: translateY(-0.7rem); } }
 
 * {
   box-sizing: border-box;
@@ -468,9 +472,11 @@ a.btn {
   padding: 0; }
 
 html, body {
-  height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
   font-size: 62.5%;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden; }
 
 .home {
   font-size: 1.7rem;
@@ -478,9 +484,12 @@ html, body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
-  overflow-x: hidden; }
+  overflow: hidden; }
+  @media screen and (min-height: 350px) and (max-height: 450px) {
+    .home {
+      min-height: 125vh; } }
 
 .logo {
   position: absolute;
@@ -495,6 +504,9 @@ html, body {
   top: 20rem;
   left: 0;
   padding: 2rem; }
+  @media screen and (min-height: 350px) and (max-height: 500px) {
+    .content-text {
+      top: 6rem; } }
 
 .presentation {
   font-size: 1.8rem;
@@ -579,7 +591,9 @@ html, body {
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .popup__content .popup__right .content {
-    font-size: 1.5rem; } }
+    font-size: 1.7rem; }
+  .contact .contenu:hover {
+    transform: scale(1.2); } }
 
 @media screen and (max-width: 768px) {
   body {
@@ -629,21 +643,36 @@ html, body {
       overflow: auto;
       font-size: 1.4rem; }
   .contact .contenu {
-    transform: scale(0.8);
     transition: all .5s ease-in-out; }
     .contact .contenu:hover {
-      transform: scale(1); } }
+      transform: translateY 1.1px; } }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 459px) and (max-width: 600px) {
   body {
     width: 100vw;
     overflow-x: hidden; }
   .presentation {
     color: #232526; }
   .contact .contenu {
-    transform: scale(0.8);
-    transition: all .5s ease-in-out; }
+    transform: scale(0.8); }
+    .contact .contenu:first-child {
+      transform: scale(0.7); }
     .contact .contenu:hover {
-      transform: scale(1); }
+      transform: translateY(1rem); }
   .popup__content {
     overflow: auto; } }
+
+@media screen and (min-width: 300px) and (max-width: 450px) {
+  .home {
+    font-size: 1.5rem;
+    height: 100vh; }
+  .logo {
+    width: 8rem;
+    height: 8rem; }
+  .content-text {
+    top: 12rem; }
+  __boxes .contenu {
+    font-size: 1.2rem;
+    transform: scale(0.7);
+    padding: 1.2rem;
+    margin-top: 2.5rem; } }

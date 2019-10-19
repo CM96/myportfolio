@@ -7,8 +7,13 @@ $overlay-color:#232526;
     background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #414345, #232526);
 }
+@mixin mediaXSM {
+  @media screen and (min-width: 300px) and (max-width:450px) {
+    @content;
+  }
+}
 @mixin mediaSM {
-    @media screen and (max-width: 500px) {
+    @media screen and (min-width: 459px) and (max-width:600px) {
       @content;
     }
   }

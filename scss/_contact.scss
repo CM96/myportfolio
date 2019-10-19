@@ -2,7 +2,7 @@
 
 
 .contact{
-    min-height: calc(100vh - 25rem);
+    min-height: calc(100vh - 25rem); // FOR FOOTER
     background-color: $overlay-color;
     text-align:center;
     padding:2rem 2.5rem;
@@ -33,6 +33,7 @@
             padding: 1.5rem 2.5rem;
             margin-top: 3rem;
             transition: all .5s ease-in-out;
+            // max-width: 115%;
             .icon{
                 background-color: $color-gray;
                 color:$overlay-color;
@@ -43,15 +44,21 @@
                 color:$color-gray;
                 padding: 1rem;
                  border: 3px solid $color-gray;
-
+            }
+            @media screen and (min-width: 769px){
+                &:hover{
+                    transform: scale(1.2);
+                }
 
             }
-            &:hover{
-                transform: scale(1.2);
+            @media screen and (max-width: 768px){
+                &:hover{
+                    transform: translateY(-.7rem);
+                }
+
             }
+            
         }
-
-    
     
 }
 }

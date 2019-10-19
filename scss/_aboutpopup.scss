@@ -42,11 +42,10 @@
     &__content{
 
         width:75%;
-        height:50rem;
+        height:75%;
         background-color: $overlay-color;
         box-shadow: 0 2rem 4rem rgba(black, .3);
         border-radius:2rem;
-        // overflow-y: scroll;
         overflow: auto;
         margin:0;
         position:relative;

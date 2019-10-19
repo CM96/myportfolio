@@ -12,12 +12,20 @@
         .popup__right{
           
             .content{
-              font-size:1.5rem;
+              font-size:1.7rem;
 
             }
         }
        }
+
     
+  }
+  .contact{
+    .contenu{
+      &:hover{
+        transform:scale(1.2);
+      }
+    }
   }
 }
   
@@ -103,10 +111,6 @@
              
             }
 
-            // /* Handle on hover */
-            // ::-webkit-scrollbar-thumb:hover {
-            //   background: #555; 
-            // }
         }
        }
        
@@ -114,10 +118,10 @@
     
      .contact{
       .contenu{
-        transform: scale(.8);
+        // transform: scale(.);
         transition: all .5s ease-in-out;
         &:hover{
-          transform: scale(1);
+          transform: translateY (1.1px);
         }
       }
     }
@@ -136,18 +140,46 @@
     .contact{
       .contenu{
         transform: scale(.8);
-        transition: all .5s ease-in-out;
-        &:hover{
-          transform: scale(1);
+        &:first-child{
+          transform: scale(.7);
         }
-      }
-    }
-    .popup{
-      &__content{
-
-      overflow: auto;
+        &:hover{
+          transform: translateY(1rem);
+        }
       }
       
     }
+    .popup{
+      &__content{
+      overflow: auto;
+      }
+    }
+  }
+  @include mediaXSM{
+
+    // FIRST SECTION
+    .home{
+      font-size:1.5rem;
+      height:100vh;
+  }
+  .logo{
+     
+      width:8rem;
+      height:8rem;
+  }
+  .content-text{
+      top:12rem;
+  }
+
+  //CONTACT SECTION
+
+  &__boxes{
+    .contenu{
+        font-size:1.2rem;
+        transform: scale(.7);
+        padding: 1.2rem;
+        margin-top: 2.5rem;
+  }
+}
   }
   
