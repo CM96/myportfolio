@@ -11,6 +11,7 @@ icon.addEventListener('click',(event)=>{
         document.querySelector('.navigation__nav').classList.toggle('appear'); 
 
 });
+
 // MAKE EACH LINK CLOSE THE NAVIGATION
 link.forEach((lien)=>{
         lien.addEventListener('click', (event)=>{
