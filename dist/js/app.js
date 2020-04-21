@@ -3,6 +3,7 @@
 const background_class=document.querySelector('#navigation__background');
 const link=document.querySelectorAll('.navigation__link');
 const icon=document.querySelector('.navigation__button');
+const title=document.querySelector('#title_heading')
 
 //MAKE THE BUTTON CLOSE THE OR OPEN THE NAVIGATION
 icon.addEventListener('click',(event)=>{
@@ -27,8 +28,3 @@ var scroll = new SmoothScroll('.navigation__item a[href*="#"]', {
 	speed: 600
 });
 
-// // Location time later
-// var time=new Date();
-// var hours=time.getHours();
-// var minutes=time.getMinutes();
-// var seconds=time.getSeconds();

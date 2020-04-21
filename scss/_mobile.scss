@@ -17,8 +17,6 @@
             }
         }
        }
-
-    
   }
   .contact{
     .contenu{
@@ -36,7 +34,8 @@
       overflow-x: hidden;
     }
     .home{
-      // background: white;
+         background-image: linear-gradient(to right, rgba(65,67,60,.7), rgba(35,37,38,.7)),
+         url(../images/leopardDRC2.jpg);
       overflow-x: hidden;
     }
     .presentation{
@@ -134,9 +133,11 @@
       width:100vw;
       overflow-x: hidden;
     }
-    .presentation{
-      color:$overlay-color;
-    }
+    .home{
+      font-size:1.7rem;
+       background-image: linear-gradient(to right, rgba(65,67,60,.8), rgba(35,37,38,0.8)),
+       url(../images/);
+  }
     .contact{
       .contenu{
         transform: scale(.8);

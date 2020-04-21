@@ -443,7 +443,7 @@ a.btn {
   .contact__boxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-top: 1rem; }
     .contact__boxes .contenu {
       font-size: 2rem;
@@ -459,6 +459,12 @@ a.btn {
         color: #888888;
         padding: 1rem;
         border: 3px solid #888888; }
+        .contact__boxes .contenu .contact-info a {
+          text-decoration: none;
+          color: inherit;
+          font-size: 28px; }
+          .contact__boxes .contenu .contact-info a:hover {
+            color: black; }
       @media screen and (min-width: 769px) {
         .contact__boxes .contenu:hover {
           transform: scale(1.2); } }
@@ -480,7 +486,7 @@ html, body {
 
 .home {
   font-size: 1.7rem;
-  background-image: url(../images/leopardDRC2.jpg);
+  background-image: linear-gradient(to right, rgba(65, 67, 60, 0.6), rgba(35, 37, 38, 0.6)), url(../images/leopardDRC2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -508,10 +514,19 @@ html, body {
     .content-text {
       top: 6rem; } }
 
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    margin-left: -10%; }
+  100% {
+    opacity: 1;
+    left: 0; } }
+
 .presentation {
   font-size: 1.8rem;
-  color: #888888; }
-  .presentation .title__heading {
+  color: #888888;
+  animation: slideLeft .6s ease-in-out; }
+  .presentation #title__heading {
     margin-left: .5rem; }
 
 ::-webkit-scrollbar {
@@ -534,8 +549,28 @@ html, body {
   border: 2px solid black;
   border-radius: 80px; }
 
+.image img {
+  animation: appear .7s ease-in-out; }
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    margin-top: 3rem; }
+  100% {
+    opacity: 1;
+    margin-top: 1rem; } }
+
+@keyframes appear {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: .4; }
+  100% {
+    opacity: 1; } }
+
 .icons {
-  padding: 0; }
+  padding: 0;
+  animation: slideUp .6s ease-in-out; }
   .icons a {
     margin-top: 1rem; }
     .icons a i {
@@ -600,6 +635,7 @@ html, body {
     width: 100vw;
     overflow-x: hidden; }
   .home {
+    background-image: linear-gradient(to right, rgba(65, 67, 60, 0.7), rgba(35, 37, 38, 0.7)), url(../images/leopardDRC2.jpg);
     overflow-x: hidden; }
   .presentation {
     color: black; }
@@ -651,8 +687,9 @@ html, body {
   body {
     width: 100vw;
     overflow-x: hidden; }
-  .presentation {
-    color: #232526; }
+  .home {
+    font-size: 1.7rem;
+    background-image: linear-gradient(to right, rgba(65, 67, 60, 0.8), rgba(35, 37, 38, 0.8)), url(../images/); }
   .contact .contenu {
     transform: scale(0.8); }
     .contact .contenu:first-child {
