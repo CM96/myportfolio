@@ -39,7 +39,8 @@
       overflow-x: hidden;
     }
     .presentation{
-      color:black;
+      // color:black;
+      color:rgb(201, 199, 199);
       .title__heading{
         font-weight: 600;
       }
@@ -136,8 +137,14 @@
     .home{
       font-size:1.7rem;
        background-image: linear-gradient(to right, rgba(65,67,60,.8), rgba(35,37,38,0.8)),
-       url(../images/);
+       url(../images/resizedLeopard.png);
   }
+   .presentation{
+    #title__heading{
+      color: white;
+ }
+   }
+    
     .contact{
       .contenu{
         transform: scale(.8);
@@ -163,6 +170,10 @@
       font-size:1.5rem;
       height:100vh;
   }
+    #title__heading{
+         color:white;
+    }
+// }
   .logo{
      
       width:8rem;

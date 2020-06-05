@@ -7,7 +7,7 @@
         
         <link rel="icon" type="image/png" href="./dist/images/logo.png">
         <!--CSS-->
-
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">         
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="./dist/css/main.css"> 
@@ -37,10 +37,10 @@
             <div class="content-text">
                 <div class="presentation">
                         <h1 class="name__heading display-1">Chris Munoko</h1>
-                        <p class="#title__heading"></p>
+                        <p id="#title__heading">Front-end developer, programmer, learner.</p>
                 </div>
                 <div class="image d-flex justify-content-center align-items-center my-2">
-                        <img src="./dist/images/risizedFace.png" alt="a selfie of Chris" class="img-fluid img-thumbnail rounded-circle profile">
+                        <img src="./dist/images/resizedFace.png" alt="a selfie of Chris" class="img-fluid img-thumbnail rounded-circle profile">
                 </div>
                 <div class="icons d-flex justify-content-center align-items-center mt-4 mr-4">
                         <a href="https://www.facebook.com/profile.php?id=100010404582839" target="_blank">
@@ -58,48 +58,42 @@
                       </div>
             </div>    
         </section>
-
         <!-- SECTION WORK -->
-
         <section class="portfolio container-fluid justify-content-center " id="portfolio">
             <h1 class="display-4 heading-primary mb-5">RECENT PROJECTS</h1>
             <div class="wrapper container">
-                <div class="project__box box--1">
+                <div class="project__box box--1" data-aos="fade-right">
                     <h3>Todo App</h3>
                     <p class="small-description">A simple todo website which uses localstorage to store each todo </p>
                     <a href="https://github.com/CM96/todo" class="btn btn-dark rounded-pill" target="_blank">See more &rarr;</a>
 
                 </div>
-                <div class="project__box box--2">
+                <div class="project__box box--2" data-aos="fade-left">
                     <h3>eSIS(In progress)</h3>
                     <p class="small-description">The student Management System at the University of WIsconsin River Falls</p>
-                    <a href="#popup_4" class="btn btn-dark rounded-pill">See more &rarr;</a>
+                    <a href="https://github.com/CM96/esis_test" class="btn btn-dark rounded-pill">See more &rarr;</a>
 
                 </div>
-                <div class="project__box box--3">
+                <div class="project__box box--3" data-aos="fade-right">
                     <h3>Most Succesful teams</h3>
                     <p class="small-description">Small SQL database of the most successful soccer teams in Europe
                     </p>
                     <a href="https://docs.google.com/spreadsheets/d/1aokx4U6iP5O_8_QypDAv3JdvltPwhoprbIdRyICNa6A/edit#gid=0" class="btn btn-dark rounded-pill" target="_blank">See more &rarr;</a>
                 </div>
-                <div class="project__box box--4">
+                <div class="project__box box--4" data-aos="fade-left">
                     <h3>Portfolio</h3>
                     <p class="small-description">This website portfolio. One of my very first completed websites
                     </p>
                     <a href="https://github.com/CM96/myportfolio" class="btn btn-dark rounded-pill" target="_blank">See more &rarr;</a>
-
                 </div>
             </div>
         </section>        
-        
          <!-- SECTION ABOUT -->
-
         <section class="about container-fluid" id="about">
-            <!-- next section to build today -->
             <h1 class="heading-primary display-3 mb-5">About Me</h1>
             <div class="bio container mb-5">
-                <div class=" bio-image rounded-circle "></div>
-                <div class=" bio-description ">
+                <div class=" bio-image rounded-circle " data-aos="zoom-in"></div>
+                <div class=" bio-description " data-aos="zoom-in">
                     <h1 class="heading-tertiary">who I am</h1>
                     <p class="paragraph ">
                         My name is Chris Munoko and I am a senior student at the University of Wisconsin River Falls majoring in
@@ -108,7 +102,7 @@
                 </div>
             </div>
             <div class="bio-boxes container mt-4">
-                <div class="bio-box bio-box--1">
+                <div class="bio-box bio-box--1" data-aos="fade-right">
                     <h1 class="heading-tertiary">What my skills are...</h1>
                     <ul class="bio__list">
                         <li class="bio__item">C, Java, JavaScript</li> <!--family-->
@@ -116,9 +110,8 @@
                         <li class="bio__item">Professionalism</li> <!--Professionalism-->
                     </ul>
                     <a href="#popup_1" class="btn rounded-pill mt-4">Read more</a>
-
                 </div>
-                <div class="bio-box bio-box--2">
+                <div class="bio-box bio-box--2" data-aos="fade-up">
                     <h1 class="heading-tertiary">I am all about...</h1>
                     <ul class="bio__list">
                         <li class="bio__item">Dedication </li>
@@ -127,7 +120,7 @@
                     </ul>
                     <a href="#popup_2" class="btn rounded-pill mt-4">Read more</a>
                 </div>
-                <div class="bio-box bio-box--3">
+                <div class="bio-box bio-box--3" data-aos="fade-left">
                     <h1 class="heading-tertiary">I enjoy...</h1>
                     <ul class="bio__list">
                         <li class="bio__item">Coding</li>
@@ -140,7 +133,6 @@
         </section>      
         <!-- POPUPS SECTION -->
 <!-- ************************************************************************************************** -->
-
         <div class="popup" id="popup_1">
             <div class="popup__content">
                 <div class=" popup__left">
@@ -158,18 +150,13 @@
                             Databases
                         </h3>
                         <p class="paragraph">
-                            <!-- I would not be the person I am if it was not for my family. They are the first people to support me in 
-                            everything I do. -->
                                 I enjoy working with databases whether they are relational database management systems or NoSQL.
                                 The ones I used the most are MongoDB and Oracle SQL.
                         </p>
                         <h3 class="heading ">
-                            <!-- Faith -->
                             Programming
                         </h3>
                         <p class="paragraph">
-                            <!-- I owe to God everything that I have in my life. Therefore, I value my faith a lot because I do not who I would have been
-                            without it. -->
                             I can program in C, Java and Javascript. Although JavaScript is my favorite language to build apps,
                             I still use java a lot and intend to use it more to build complex apps.
                         </p>
@@ -267,36 +254,6 @@
                 </div>
             </div>
         </div>
-        <div class="popup" id="popup_4">
-            
-            <div class="popup__content">
-                <div class=" popup__left">
-                     <img src="./dist/images/side_image.jpg" alt="chris smiling near a river" class="img-fluid photo"> 
-                </div>
-                <div class="popup__right">
-                    <div class="popup__logo">
-                        <img src="./dist/images/logo.png" alt="chris' brand logo" class="img-fluid">
-                    </div>
-                    <a href="#portfolio" class="popup__close">&times;</a>
-                    <div class="divider"></div>
-                    <h1 class="heading-secondary display-4 ">eSIS</h1>
-                    <div class="content">
-                        <p class="paragraph mt-3">
-                            This web app is built with ejs, CSS(Sass), JavaScript on the front-end and Node.js and MongoDB on the back(MEN stack: Mongo Express Node). 
-                            For our capstone project, my team and I decided to modernize the User Interface of
-                            the student management systems and adding a couple of features to it.
-                        </p>
-
-                        <ul class="ml-5 mt-4">
-                            <li>Front-end: EJS, CSS(sass), JavaScript</li>
-                            <li>Back-end: MongoDb, Node.Js </li>
-                        </ul>
-                        <a href="https://github.com/CM96/esis_test" class="btn rounded-pill mt-4" target="_blank">See more</a>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
         <section class="contact" id="contact">
             <h1 class="heading-primary display-md-2 mb-5">How to reach me</h1>
             <div class="contact__boxes">
@@ -347,16 +304,15 @@
                  </div>
              </div>
              <p> &copy; 2020 chris munoko. all rights reserved.</p>
-             
         </footer>
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous">
-        </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 100, // offset (in px) from the original trigger point
+                easing: 'ease-in-out', // default easing for AOS animations
+                duration: 1000, // values from 0 to 3000, with step 50ms
+            });
+          </script>
         <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
         <script src="./dist/js/app.js"></script>
         

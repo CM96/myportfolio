@@ -14,6 +14,30 @@
     opacity: 1;
     transform: translateX(0px); } }
 
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    margin-left: -10%; }
+  100% {
+    opacity: 1;
+    left: 0; } }
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    margin-top: 3rem; }
+  100% {
+    opacity: 1;
+    margin-top: 1rem; } }
+
+@keyframes appear {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: .4; }
+  100% {
+    opacity: 1; } }
+
 @keyframes textAni {
   0% {
     opacity: 0;
@@ -21,36 +45,6 @@
   80% {
     opacity: 1;
     transform: rotateX(45deg); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-
-@keyframes box-1_ani {
-  0% {
-    opacity: 0;
-    transform: translateX(-5rem); }
-  75% {
-    opacity: .8; }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-
-@keyframes box-3_ani {
-  0% {
-    opacity: 0;
-    transform: translateX(5rem); }
-  75% {
-    opacity: .8; }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-
-@keyframes box-2_ani {
-  0% {
-    opacity: 0;
-    transform: translateY(5rem); }
-  75% {
-    opacity: .8; }
   100% {
     opacity: 1;
     transform: translate(0); } }
@@ -514,18 +508,10 @@ html, body {
     .content-text {
       top: 6rem; } }
 
-@keyframes slideLeft {
-  0% {
-    opacity: 0;
-    margin-left: -10%; }
-  100% {
-    opacity: 1;
-    left: 0; } }
-
 .presentation {
   font-size: 1.8rem;
   color: #888888;
-  animation: slideLeft .6s ease-in-out; }
+  animation: slideLeft .8s ease-in-out; }
   .presentation #title__heading {
     margin-left: .5rem; }
 
@@ -550,23 +536,7 @@ html, body {
   border-radius: 80px; }
 
 .image img {
-  animation: appear .7s ease-in-out; }
-
-@keyframes slideUp {
-  0% {
-    opacity: 0;
-    margin-top: 3rem; }
-  100% {
-    opacity: 1;
-    margin-top: 1rem; } }
-
-@keyframes appear {
-  0% {
-    opacity: 0; }
-  50% {
-    opacity: .4; }
-  100% {
-    opacity: 1; } }
+  animation: appear 1s ease-in-out; }
 
 .icons {
   padding: 0;
@@ -638,7 +608,7 @@ html, body {
     background-image: linear-gradient(to right, rgba(65, 67, 60, 0.7), rgba(35, 37, 38, 0.7)), url(../images/leopardDRC2.jpg);
     overflow-x: hidden; }
   .presentation {
-    color: black; }
+    color: #c9c7c7; }
     .presentation .title__heading {
       font-weight: 600; }
   .portfolio .wrapper {
@@ -689,7 +659,9 @@ html, body {
     overflow-x: hidden; }
   .home {
     font-size: 1.7rem;
-    background-image: linear-gradient(to right, rgba(65, 67, 60, 0.8), rgba(35, 37, 38, 0.8)), url(../images/); }
+    background-image: linear-gradient(to right, rgba(65, 67, 60, 0.8), rgba(35, 37, 38, 0.8)), url(../images/resizedLeopard.png); }
+  .presentation #title__heading {
+    color: white; }
   .contact .contenu {
     transform: scale(0.8); }
     .contact .contenu:first-child {
@@ -703,6 +675,8 @@ html, body {
   .home {
     font-size: 1.5rem;
     height: 100vh; }
+  #title__heading {
+    color: white; }
   .logo {
     width: 8rem;
     height: 8rem; }
