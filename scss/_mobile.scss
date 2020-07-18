@@ -1,9 +1,7 @@
-// @import 'variables';
 
 // Widescreens
 @include mediaXL {
   }
-  
   // Desktops & Laptops
   @include mediaLG {
     .popup{
@@ -39,7 +37,6 @@
       overflow-x: hidden;
     }
     .presentation{
-      // color:black;
       color:rgb(201, 199, 199);
       .title__heading{
         font-weight: 600;
@@ -52,17 +49,30 @@
         & > .project__box{
             width:100%;
             height:25rem;
-            
          }
-         & > .project__box.box--2,
+         & > .project__box.box--2{
+           top:25rem;
+         }
+         & > .project__box.box--3{
+           top:50rem;
+           a:nth-of-type(1){
+            top: 60%;
+            transform: translate(-60%,-50%);
+          }
+          a:nth-of-type(2){
+            top: 68%;
+            transform: translate(-68%,-51%);
+          }
+         }
          & > .project__box.box--4{
-          position: relative;
+          top:75rem;
          }
          
        }
      }
     //about section
      .about{
+      min-height: 130vh;
        .bio{
          & > div.bio-description{
            position: relative;
@@ -70,14 +80,18 @@
            margin-top:2rem;
          }
        }
-       .bio-boxes{
-         display:block;
-         height:90rem;
-         & > div:not(:last-child) {
-           margin-bottom: 2rem; 
-         }
-       }
-     }
+      .skills{
+        &__summary{
+            grid-template-columns: 1fr;
+            .development{
+                padding: 2.5rem;
+            }
+            .databases{
+                padding: 3rem;
+            }
+        }      
+    }
+   }
      // about section popups
 
      .popup{
@@ -102,13 +116,10 @@
           font-size:1.5rem;
             .divider{
               display: block;
-              
             }
             .content{
               overflow:auto;
               font-size:1.4rem;
-              
-             
             }
 
         }
@@ -118,7 +129,6 @@
     
      .contact{
       .contenu{
-        // transform: scale(.);
         transition: all .5s ease-in-out;
         &:hover{
           transform: translateY (1.1px);
@@ -164,7 +174,6 @@
     }
   }
   @include mediaXSM{
-
     // FIRST SECTION
     .home{
       font-size:1.5rem;
@@ -182,9 +191,7 @@
   .content-text{
       top:12rem;
   }
-
   //CONTACT SECTION
-
   &__boxes{
     .contenu{
         font-size:1.2rem;

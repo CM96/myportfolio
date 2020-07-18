@@ -14,13 +14,13 @@
     opacity: 1;
     transform: translateX(0px); } }
 
-@keyframes slideLeft {
+@keyframes slideDown {
   0% {
     opacity: 0;
-    margin-left: -10%; }
+    transform: translateY(-2rem); }
   100% {
     opacity: 1;
-    left: 0; } }
+    transform: translateY(0); } }
 
 @keyframes slideUp {
   0% {
@@ -33,8 +33,6 @@
 @keyframes appear {
   0% {
     opacity: 0; }
-  50% {
-    opacity: .4; }
   100% {
     opacity: 1; } }
 
@@ -45,6 +43,54 @@
   80% {
     opacity: 1;
     transform: rotateX(45deg); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes instaMoveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(5rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes gitMoveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(5rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes linkMoveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(5rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes faceBMoveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(5rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes boxMoveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(7rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes boxMoveRight {
+  0% {
+    opacity: 0;
+    transform: translateX(7rem); }
   100% {
     opacity: 1;
     transform: translate(0); } }
@@ -179,36 +225,76 @@
     transition: all .5s;
     z-index: 100; }
   .portfolio .wrapper {
-    height: 65rem;
+    height: 70rem;
     position: relative;
-    font-size: 1.5rem;
     overflow: hidden; }
     .portfolio .wrapper .project__box {
       width: 50%;
       height: 50%;
       padding: 2rem;
       transition: all .3s ease;
+      font-size: 1.7rem;
       overflow: hidden; }
-      .portfolio .wrapper .project__box > a {
-        font-size: 1.5rem;
-        background-color: #232526;
-        text-transform: uppercase;
-        transition: transform .3s ease; }
-        .portfolio .wrapper .project__box > a:hover {
-          background-color: #888888;
-          color: #232526; }
+      .portfolio .wrapper .project__box a.link-button {
+        position: absolute;
+        border-radius: 1rem;
+        border: .3rem solid #000;
+        font-size: 1.7rem;
+        padding: .5rem;
+        background-color: rgba(136, 136, 136, 0.2);
+        color: #000;
+        opacity: 0;
+        transition: all .5s ease-in; }
+        .portfolio .wrapper .project__box a.link-button:hover {
+          background-color: #232526;
+          text-decoration: none;
+          color: white; }
+      .portfolio .wrapper .project__box a:nth-of-type(1) {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); }
+      .portfolio .wrapper .project__box a:nth-of-type(2) {
+        left: 51%;
+        top: 58%;
+        transform: translate(-58%, -51%); }
+      .portfolio .wrapper .project__box:after {
+        content: ' ';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: -1;
+        background-image: url(../images/portfolio-img-1.jpg);
+        background-size: cover;
+        filter: blur(6px);
+        transition: all .5s ease-in-out; }
       .portfolio .wrapper .project__box:hover {
         transform: scale(0.9);
         box-shadow: 0.7rem 0.8rem 0.8rem #111111;
         cursor: pointer; }
+      .portfolio .wrapper .project__box:hover:after {
+        opacity: 1; }
+      .portfolio .wrapper .project__box:hover a {
+        opacity: 1; }
       .portfolio .wrapper .project__box.box--1 {
+        position: absolute;
+        left: 0;
+        top: 0;
         background-image: url(../images/portfolio-img-1.jpg);
         background-size: cover;
         color: white; }
       .portfolio .wrapper .project__box.box--3 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
         background-image: url(../images/portfolio-img-3.jpg);
         background-size: cover;
         color: white; }
+        .portfolio .wrapper .project__box.box--3:after {
+          background-image: url(../images/portfolio-img-3.jpg);
+          background-size: cover; }
       .portfolio .wrapper .project__box.box--2 {
         position: absolute;
         right: 0;
@@ -216,6 +302,9 @@
         background-image: url(../images/portfolio-img-2.jpg);
         background-size: cover;
         color: white; }
+        .portfolio .wrapper .project__box.box--2:after {
+          background-image: url(../images/portfolio-img-2.jpg);
+          background-size: cover; }
       .portfolio .wrapper .project__box.box--4 {
         position: absolute;
         right: 0;
@@ -223,9 +312,13 @@
         background-image: url(../images/portfolio-img-4.jpg);
         background-size: cover;
         color: white; }
+        .portfolio .wrapper .project__box.box--4:after {
+          background-image: url(../images/portfolio-img-4.jpg);
+          background-size: cover; }
 
 .about {
-  background-color: #d4d4d4; }
+  background-color: #d4d4d4;
+  font-size: 1.7rem; }
   .about .heading-primary {
     text-align: center;
     position: relative;
@@ -248,7 +341,8 @@
       background-image: url(../images/suit_photo.jpg);
       background-size: cover;
       width: 20rem;
-      border: 0.8rem solid #888888; }
+      border: 0.8rem solid #888888;
+      box-shadow: 0.2rem 0.3rem 1rem rgba(0, 0, 0, 0.7); }
     .about .bio .bio-description {
       background: #232526;
       /* fallback for old browsers */
@@ -261,85 +355,85 @@
       position: absolute;
       right: 0;
       top: 0;
-      font-size: 1.7rem;
       padding: 1.3rem;
-      border-radius: 2rem; }
-  .about .bio-boxes {
+      border-radius: 2rem;
+      box-shadow: 0.2rem 0.3rem 1rem rgba(0, 0, 0, 0.7); }
+  .about .skills__summary {
+    background-image: linear-gradient(to right, rgba(65, 67, 60, 0.9), rgba(35, 37, 38, 0.9)), url(../images/coding_svg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    font-size: 1.6rem;
+    color: #eee;
     display: grid;
-    height: 30rem;
-    display: grid;
-    color: #888888;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(20rem, auto);
-    grid-gap: 2rem;
-    padding: 2rem; }
-    .about .bio-boxes .bio-box {
-      padding: 1.5rem;
-      font-size: 1.6rem; }
-      .about .bio-boxes .bio-box .btn {
-        z-index: 1000;
-        background-color: #888888;
-        font-size: 1.6rem; }
-        .about .bio-boxes .bio-box .btn:hover {
-          background-color: #d4d4d4; }
-      .about .bio-boxes .bio-box.bio-box--1 {
-        background: #232526;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #414345, #232526);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #414345, #232526);
-        border-bottom: 1.1rem solid #888888;
-        border-top-left-radius: 2rem;
-        border-bottom-left-radius: 2rem;
-        animation: box-1_ani 1.4s; }
-      .about .bio-boxes .bio-box.bio-box--2 {
-        background: #232526;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #414345, #232526);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #414345, #232526);
-        border-bottom: 1.1rem solid #888888;
-        animation: box-2_ani 1.4s; }
-      .about .bio-boxes .bio-box.bio-box--3 {
-        background: #232526;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #414345, #232526);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #414345, #232526);
-        border-bottom: 1.1rem solid #888888;
-        border-top-right-radius: 2rem;
-        border-bottom-right-radius: 2rem;
-        animation: box-3_ani 1.4s; }
-
-.heading-tertiary {
-  position: relative;
-  display: inline-block; }
-  .heading-tertiary:not(first-child) {
-    margin-bottom: 3rem; }
-  .heading-tertiary:after {
-    content: " ";
-    position: absolute;
-    width: 35%;
-    height: .3rem;
-    bottom: -1rem;
-    left: 0;
-    background-color: #888888; }
-
-.bio__list {
-  font-size: 1.7rem;
-  margin-left: 1.6rem;
-  margin-top: 1.5rem;
-  list-style-type: circle; }
-  .bio__list .bio__item {
-    color: #888888; }
-
-a.btn {
-  padding: .8rem;
-  height: 4rem;
-  font-size: 1.6rem;
-  background-color: #888888; }
-  a.btn:hover {
-    background-color: #d4d4d4; }
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: 0.2rem 0.3rem 2.5rem rgba(0, 0, 0, 0.7); }
+    .about .skills__summary .development {
+      padding: 3rem; }
+      .about .skills__summary .development__skills {
+        display: flex;
+        width: 100%;
+        justify-content: space-around; }
+        .about .skills__summary .development__skills .dev-skill {
+          width: 8rem;
+          height: 8rem;
+          border: 0.5rem solid #888888;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .about .skills__summary .development__skills .dev-skill i {
+            font-size: 3rem; }
+    .about .skills__summary .databases {
+      padding: 3rem; }
+      .about .skills__summary .databases__skills {
+        display: flex;
+        width: 100%;
+        justify-content: space-around; }
+        .about .skills__summary .databases__skills .databases__skill {
+          width: 9rem;
+          height: 9rem;
+          border: 0.5rem solid #888888;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+    .about .skills__summary .soft {
+      padding: 4rem; }
+      .about .skills__summary .soft__skills {
+        list-style: circle; }
+  .about .popup-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 12rem; }
+    .about .popup-button #toggle-button {
+      position: relative;
+      background-color: #eee;
+      color: #000000;
+      padding: 1rem;
+      z-index: 1;
+      border: 0.3rem solid #232526;
+      border-radius: .3rem; }
+      .about .popup-button #toggle-button a {
+        color: inherit; }
+        .about .popup-button #toggle-button a:hover {
+          text-decoration: none;
+          color: #eee; }
+      .about .popup-button #toggle-button:after {
+        content: ' ';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 0;
+        z-index: -1;
+        background-color: #232526;
+        transition: all .4s ease-in-out; }
+      .about .popup-button #toggle-button:hover {
+        color: #eee; }
+      .about .popup-button #toggle-button:hover:after {
+        height: 100%; }
 
 .popup {
   width: 100%;
@@ -511,7 +605,7 @@ html, body {
 .presentation {
   font-size: 1.8rem;
   color: #888888;
-  animation: slideLeft .8s ease-in-out; }
+  animation: slideDown .9s ease-in-out .2s both; }
   .presentation #title__heading {
     margin-left: .5rem; }
 
@@ -536,7 +630,7 @@ html, body {
   border-radius: 80px; }
 
 .image img {
-  animation: appear 1s ease-in-out; }
+  animation: appear 1s ease-in-out .3s both; }
 
 .icons {
   padding: 0;
@@ -546,17 +640,25 @@ html, body {
     .icons a i {
       margin-left: 2rem;
       color: #232526; }
-      .icons a i.fa-instagram:hover {
-        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent; }
-      .icons a i.fa-facebook:hover {
-        color: #3B5998; }
-      .icons a i.fa-linkedin:hover {
-        color: #04669A; }
-      .icons a i.fa-github:hover {
-        color: black; }
+      .icons a i.fa-instagram {
+        animation: instaMoveLeft 1s ease-in-out 1s both; }
+        .icons a i.fa-instagram:hover {
+          background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent; }
+      .icons a i.fa-facebook {
+        animation: faceBMoveLeft 1s ease-in-out .3s both; }
+        .icons a i.fa-facebook.fa-facebook:hover {
+          color: #3B5998; }
+      .icons a i.fa-linkedin {
+        animation: linkMoveLeft 1s ease-in-out .6s both; }
+        .icons a i.fa-linkedin.fa-linkedin:hover {
+          color: #04669A; }
+      .icons a i.fa-github {
+        animation: gitMoveLeft 1s ease-in-out .9s both; }
+        .icons a i.fa-github:hover {
+          color: black; }
 
 .main-footer {
   text-align: center;
@@ -616,18 +718,30 @@ html, body {
     .portfolio .wrapper > .project__box {
       width: 100%;
       height: 25rem; }
-    .portfolio .wrapper > .project__box.box--2,
+    .portfolio .wrapper > .project__box.box--2 {
+      top: 25rem; }
+    .portfolio .wrapper > .project__box.box--3 {
+      top: 50rem; }
+      .portfolio .wrapper > .project__box.box--3 a:nth-of-type(1) {
+        top: 60%;
+        transform: translate(-60%, -50%); }
+      .portfolio .wrapper > .project__box.box--3 a:nth-of-type(2) {
+        top: 68%;
+        transform: translate(-68%, -51%); }
     .portfolio .wrapper > .project__box.box--4 {
-      position: relative; }
-  .about .bio > div.bio-description {
-    position: relative;
-    width: 100%;
-    margin-top: 2rem; }
-  .about .bio-boxes {
-    display: block;
-    height: 90rem; }
-    .about .bio-boxes > div:not(:last-child) {
-      margin-bottom: 2rem; }
+      top: 75rem; }
+  .about {
+    min-height: 130vh; }
+    .about .bio > div.bio-description {
+      position: relative;
+      width: 100%;
+      margin-top: 2rem; }
+    .about .skills__summary {
+      grid-template-columns: 1fr; }
+      .about .skills__summary .development {
+        padding: 2.5rem; }
+      .about .skills__summary .databases {
+        padding: 3rem; }
   .popup__logo {
     display: block;
     opacity: 1;

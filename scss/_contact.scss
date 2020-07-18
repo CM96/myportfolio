@@ -3,7 +3,7 @@
 
 .contact{
     min-height: calc(100vh - 25rem); // FOR FOOTER
-    background-color: $overlay-color;
+    background-color: $overlay-color;    
     text-align:center;
     padding:2rem 2.5rem;
     .heading-primary{
@@ -33,7 +33,6 @@
             padding: 1.5rem 2.5rem;
             margin-top: 3rem;
             transition: all .5s ease-in-out;
-            // max-width: 115%;
             .icon{
                 background-color: $color-gray;
                 color:$overlay-color;

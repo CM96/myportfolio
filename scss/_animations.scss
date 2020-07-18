@@ -19,14 +19,15 @@
         
     }
 }
-@keyframes slideLeft{
+@keyframes slideDown{
     0%{
         opacity: 0;
-        margin-left: -10%;
+        transform:translateY(-2rem);
+
     }
     100%{
         opacity: 1;
-        left: 0;
+        transform: translateY(0);
     }
 }
 
@@ -46,9 +47,6 @@
         opacity: 0;
 
     }
-    50%{
-        opacity: .4;
-    }
     100%{
         opacity: 1;
     }
@@ -67,4 +65,76 @@
         transform:translate(0);
     }
 }
+
+//first section animations:SOCIALS
+//instagram
+@keyframes instaMoveLeft{
+    0%{
+        opacity:0;
+        transform:translateX(5rem);
+    }
+    100%{
+        opacity:1;
+        transform:translate(0);
+    }
+
+}
+@keyframes gitMoveLeft{
+    0%{
+        opacity:0;
+        transform:translateX(5rem);
+    }
+    100%{
+        opacity:1;
+        transform:translate(0);
+    }
+
+}
+
+@keyframes linkMoveLeft{
+    0%{
+        opacity:0;
+        transform:translateX(5rem);
+    }
+    100%{
+        opacity:1;
+        transform:translate(0);
+    }
+
+}
+@keyframes faceBMoveLeft{
+    0%{
+        opacity:0;
+        transform:translateX(5rem);
+    }
+    100%{
+        opacity:1;
+        transform:translate(0);
+    }
+
+}
+// PROJECT LINKS
+@keyframes boxMoveLeft{
+    0%{
+        opacity:0;
+        transform:translateX(7rem);
+    }
+    100%{
+        opacity:1;
+        transform:translate(0);
+    }
+
+}
+
+@keyframes boxMoveRight{
+    0%{
+        opacity:0;
+        transform:translateX(7rem);
+    }
+    100%{
+        opacity:1;
+        transform:translate(0);
+    }
+
+} 
 
