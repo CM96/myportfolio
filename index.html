@@ -1,273 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!--Meta tags-->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
-        <link rel="icon" type="image/png" href="./dist/images/logo.png">
-        <!--CSS-->
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">         
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="./dist/css/main.css"> 
 
-        <title>Munokovic</title>
-    </head>
-    <body>
-        <!-- NAVIGATION -->
-        <div class="navigation">
-            <div class="navigation__button" >
-                <span class="navigation__icon"></span>
+<head>
+    <!--Meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" type="image/png" href="./dist/images/logo.png">
+    <!--CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
+
+    <title>Munokovic</title>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <div class="navigation">
+        <div class="navigation__button">
+            <span class="navigation__icon"></span>
+        </div>
+        <div id="navigation__background" class="navigation__background">&nbsp;</div>
+        <div class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#home" class="navigation__link">Home</a></li>
+                <li class="navigation__item"><a href="#portfolio" class="navigation__link">Portfolio</a></li>
+                <li class="navigation__item"><a href="#about" class="navigation__link">Who is Chris?</a></li>
+                <li class="navigation__item"><a href="#contact" class="navigation__link">how to reach me</a></li>
+            </ul>
+        </div>
+    </div>
+    <section class="home container-fluid" id="home">
+        <div class="logo">
+            <img src="./dist/images/logo.png" alt="chris' brand logo" class="img-fluid">
+        </div>
+        <div class="content-text">
+            <div class="presentation">
+                <h1 class="name__heading display-1">Chris Munoko</h1>
+                <p id="#title__heading">Software Engineer, programmer, learner.</p>
             </div>
-            <div id="navigation__background" class="navigation__background">&nbsp;</div>
-            <div class="navigation__nav">
-                <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#home" class="navigation__link">Home</a></li>
-                    <li class="navigation__item"><a href="#portfolio" class="navigation__link">Portfolio</a></li>
-                    <li class="navigation__item"><a href="#about" class="navigation__link">Who is Chris?</a></li>
-                    <li class="navigation__item"><a href="#contact" class="navigation__link">how to reach me</a></li>
-                </ul>
+            <div class="image d-flex justify-content-center align-items-center my-2">
+                <img src="./dist/images/resizedFace.png" alt="a selfie of Chris"
+                    class="img-fluid img-thumbnail rounded-circle profile">
+            </div>
+            <div class="icons d-flex justify-content-center align-items-center mt-4 mr-4">
+                <a href="https://www.linkedin.com/in/chris-munoko-859559176/" target="_blank">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://github.com/CM96" target="_blank">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
             </div>
         </div>
-        <section class="home container-fluid" id="home">
-            <div class="logo">
-                <img src="./dist/images/logo.png" alt="chris' brand logo" class="img-fluid">
+    </section>
+    <!-- SECTION WORK -->
+    <section class="portfolio container-fluid justify-content-center " id="portfolio">
+        <h1 class="display-4 heading-primary mb-5">RECENT PROJECTS</h1>
+        <div class="wrapper container">
+            <div class="project__box box--1">
+                <h3>Todo App</h3>
+                <p class="small-description">A simple todo website which uses localstorage to store each todo </p>
+                <a href="https://github.com/CM96/todo" class="link-button" target="_blank">CODE</a>
+                <a href="https://cm96.github.io/todo/" class="link-button mt-5" target="_blank"> DEMO </a>
             </div>
-            <div class="content-text">
-                <div class="presentation">
-                        <h1 class="name__heading display-1">Chris Munoko</h1>
-                        <p id="#title__heading">Front-end developer, programmer, learner.</p>
-                </div>
-                <div class="image d-flex justify-content-center align-items-center my-2">
-                        <img src="./dist/images/resizedFace.png" alt="a selfie of Chris" class="img-fluid img-thumbnail rounded-circle profile">
-                </div>
-                <div class="icons d-flex justify-content-center align-items-center mt-4 mr-4">
-                        <a href="https://www.facebook.com/profile.php?id=100010404582839" target="_blank">
-                          <i class="fab fa-facebook fa-2x"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/chris-munoko-859559176/" target="_blank">
-                          <i class="fab fa-linkedin fa-2x"></i>
-                        </a>
-                        <a href="https://github.com/CM96" target="_blank">
-                          <i class="fab fa-github fa-2x"></i>
-                        </a>
-                        <a href="https://www.instagram.com/munokovic/?hl=en" target="_blank">
-                            <i class="fab fa-instagram fa-2x"></i>
-                          </a>
-                      </div>
-            </div>    
-        </section>
-        <!-- SECTION WORK -->
-        <section class="portfolio container-fluid justify-content-center " id="portfolio">
-            <h1 class="display-4 heading-primary mb-5">RECENT PROJECTS</h1>
-            <div class="wrapper container">
-                <div class="project__box box--1" >
-                    <h3>Todo App</h3>
-                    <p class="small-description">A simple todo website which uses localstorage to store each todo </p>
-                    <a href="https://github.com/CM96/todo" class="link-button" target="_blank">CODE</a>
-                    <a href="https://cm96.github.io/todo/" class="link-button mt-5" target="_blank"> DEMO </a>
-                </div>
-                <div class="project__box box--2">
-                    <h3>eSIS</h3>
-                    <p class="small-description">The student Management System at the University of WIsconsin River Falls</p>
-                    <a href="https://github.com/CM96/esis_test" class="link-button" target="_blank">CODE</a>
+            <div class="project__box box--2">
+                <h3>eSIS</h3>
+                <p class="small-description">The student Management System at the University of WIsconsin River Falls
+                </p>
+                <a href="https://github.com/CM96/esis_test" class="link-button" target="_blank">CODE</a>
 
-                </div>
-                <div class="project__box box--3">
-                    <h3>Ronah Smoothies</h3>
-                    <p class="small-description">Website for Ronah Smoothies based in Kinshasa(Democratic Republic of the Congo)
-                    </p>
-                    <a href="https://github.com/CM96/Ronah" class="link-button" target="_blank">CODE</a>
-                    <a href="https://cm96.github.io/Ronah/" class="link-button mt-5" target="_blank"> DEMO </a>
-                </div>
-                <div class="project__box box--4">
-                    <h3>Portfolio</h3>
-                    <p class="small-description">This website portfolio. One of my very first completed websites
-                    </p>
-                    <a href="https://github.com/CM96/myportfolio" class="link-button" target="_blank">CODE</a>
-                </div>
             </div>
-        </section>        
-         <!-- SECTION ABOUT -->
-        <section class="about container-fluid" id="about">
-            <h1 class="heading-primary display-3 mb-5">About Me</h1>
-            <div class="bio container mb-5">
-                <div class=" bio-image rounded-circle " data-aos="fade-right"></div>
-                <div class=" bio-description " data-aos="fade-left">
-                    <h1 class="heading-tertiary">who I am</h1>
-                    <p class="paragraph ">
-                        My name is Chris Munoko and I am a recent Computer Science graduate of the University of Wisconsin River Falls.
-                         I was born and raised in the Democratic Republic of the Congo and currently live in River Falls(WI).
-                    </p>
-                </div>
+            <div class="project__box box--3">
+                <h3>Ronah Smoothies</h3>
+                <p class="small-description">Website for Ronah Smoothies based in Kinshasa(Democratic Republic of the
+                    Congo)
+                </p>
+                <a href="https://github.com/CM96/Ronah" class="link-button" target="_blank">CODE</a>
+                <a href="https://ronahsmoothies.com/" class="link-button mt-5" target="_blank"> DEMO </a>
             </div>
-            <div class="skills container" data-aos="fade-up" data-aos-duration="1500">
-                <h1 class="display-4">Skills</h1>
-                <div class="skills__summary">
-                    <div class="development">
-                        <h1 class="display-6 mb-5"> <i class="fas fa-file-code"></i> Development</h1>
-                        <div class="development__skills mt-2">
-                            <div class="dev-skill rounded-circle" data-aos="fade-left" data-aos-delay="10">
-                                <i class="fab fa-html5"></i>
-                            </div>
-                            <div class="dev-skill rounded-circle" data-aos="fade-left" data-aos-delay="15">
-                                <i class="fab fa-css3-alt"></i>
-                            </div>
-                            <div class="dev-skill rounded-circle" data-aos="fade-left" data-aos-delay="20">
-                                <i class="fab fa-js"></i>
-                            </div>
+            <div class="project__box box--4">
+                <h3>Portfolio</h3>
+                <p class="small-description">This website portfolio. One of my very first completed websites
+                </p>
+                <a href="https://github.com/CM96/myportfolio" class="link-button" target="_blank">CODE</a>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION ABOUT -->
+    <section class="about container-fluid" id="about">
+        <h1 class="heading-primary display-3 mb-5">About Me</h1>
+        <div class="bio container mb-5">
+            <div class=" bio-image rounded-circle " data-aos="fade-right"></div>
+            <div class=" bio-description " data-aos="fade-left">
+                <h1 class="heading-tertiary">who I am</h1>
+                <p class="paragraph ">
+                    <!-- I am a Front End developer with hands-on experience in building responsive websites and web
+                    applications.
+                    I mostly use HTML/CSS and JavaScript; however, I also have experience working with back end
+                    technologies such as MongoDB
+                    and Node.js -->
+                    I am an Associate Software Engineer who specializes in building things for the web. Currently, I
+                    work for The Travelers Companies.
+                </p>
+            </div>
+        </div>
+        <div class="skills container" data-aos="fade-up" data-aos-duration="1500">
+            <h1 class="display-4">Skills</h1>
+            <div class="skills__summary">
+                <div class="development">
+                    <h1 class="display-6 mb-5"> <i class="fas fa-file-code"></i> Development</h1>
+                    <div class="development__skills mt-2">
+                        <div class="dev-skill rounded-circle" data-aos="fade-left" data-aos-delay="10">
+                            <i class="fab fa-html5"></i>
                         </div>
-                        <div class="development__skills mt-2">
-                            <div class="dev-skill rounded-circle" data-aos="fade-left" data-aos-delay="30">
-                                <i class="fab fa-java"></i>
-                            </div>
-                            <div class="dev-skill rounded-circle" data-aos="fade-left" data-aos-delay="35">
-                                <i class="fab fa-python"></i>
-                            </div>
-                            <div class="dev-skill rounded-circle" data-aos="fade-left" data-aos-delay="40">
-                                <i class="fab fa-node"></i>
-                            </div>
+                        <div class="dev-skill rounded-circle" data-aos="fade-left" data-aos-delay="15">
+                            <i class="fab fa-css3-alt"></i>
                         </div>
-                        <div class="development__skills mt-2">
-                            <div class="dev-skill rounded-circle" data-aos="fade-left" data-aos-delay="45">R
-                                <i></i>
-                            </div>
-                            <div class="dev-skill rounded-circle" data-aos="fade-left" data-aos-delay="50">
-                                <i class="fab fa-bootstrap"></i>
-                            </div>
-                            <div class="dev-skill rounded-circle"data-aos="fade-left" data-aos-delay="55">
-                                <i class="fab fa-react"></i>
-                            </div>
+                        <div class="dev-skill rounded-circle" data-aos="fade-left" data-aos-delay="20">
+                            <i class="fab fa-js"></i>
                         </div>
                     </div>
-                    <div class="databases" >
-                        <h1 class="display-6 mb-5"><i class="fas fa-database"></i> Databases</h1>
-                        <div class="databases__skills">
-                            <div class="databases__skill rounded-circle" data-aos="fade-left" data-aos-delay="10">MongoDB</div>
-                            <div class="databases__skill rounded-circle" data-aos="fade-left" data-aos-delay="10">MYSQL</div>
+                    <div class="development__skills mt-2">
+                        <div class="dev-skill rounded-circle" data-aos="fade-left" data-aos-delay="30">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <div class="dev-skill rounded-circle" data-aos="fade-left" data-aos-delay="35">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="dev-skill rounded-circle" data-aos="fade-left" data-aos-delay="40">
+                            <i class="fab fa-node"></i>
                         </div>
                     </div>
-                    <div class="soft">
-                        <h1 class="display-6 mb-5">Soft Skills</h1>
-                            <ul class="soft__skills">
-                                <li>Communication</li>
-                                <li>Teamwork</li>
-                                <li>Time Management</li>
-                                <li>Critical Thinking</li>
-                                <li>Work Ethic</li>
-                            </ul>
+                    <div class="development__skills mt-2">
+                        <div class="dev-skill rounded-circle" data-aos="fade-left" data-aos-delay="45">R
+                            <i></i>
+                        </div>
+                        <div class="dev-skill rounded-circle" data-aos="fade-left" data-aos-delay="50">
+                            <i class="fab fa-bootstrap"></i>
+                        </div>
+                        <div class="dev-skill rounded-circle" data-aos="fade-left" data-aos-delay="55">
+                            <i class="fab fa-react"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="popup-button container">
-                <button id="toggle-button"> <a href="#popup_3"> More about me</a></button>
-            </div>
-        </section>      
-        <!-- POPUP -->
-        <div class="popup" id="popup_3">
-            <div class="popup__content">
-                <div class=" popup__left">
-                     <img src="./dist/images/side_image.jpg" alt="chris smiling" class="img-fluid photo"> 
+                <div class="databases">
+                    <h1 class="display-6 mb-5"><i class="fas fa-database"></i> Databases</h1>
+                    <div class="databases__skills">
+                        <div class="databases__skill rounded-circle" data-aos="fade-left" data-aos-delay="10">MongoDB
+                        </div>
+                        <div class="databases__skill rounded-circle" data-aos="fade-left" data-aos-delay="10">MYSQL
+                        </div>
+                    </div>
                 </div>
-                <div class="popup__right">
-                    <div class="popup__logo">
-                        <img src="./dist/images/logo.png" alt="chris' brand logo" class="img-fluid">
-                    </div>
-                    <a href="#toggle-button" class="popup__close">&times;</a>
-                    <div class="divider"></div>
-                    <h1 class="heading-secondary display-4 my-3">I enjoy...</h1>
-                    <div class="content">
-                        <h3 class="heading">
-                            Coding
-                        </h3>
-                        <p class="paragraph">
-                            I have always been fascinated by how computers work and what we can with them to impact today's society. That is why I chose Computer
-                            Science as my major. Although it can get frustrating at times, passion and curiosity continue to motivate me.
-                            I enjoy coding in Javascript and Java. I have used HTML, CSS and JavaScript to design  websites for fun including 
-                            this portfolio.  I am familiar with databases such as MongoDB and Oracle SQL thanks to the Database Management class I took in college.
-
-                        </p>
-                        <h3 class="heading">
-                            Soccer
-                        </h3>
-                        <p class="paragraph">
-                            Soccer has always been one of my favorite hobbies. With my busy student schedule, it is difficult
-                            to watch it as much as I would like to. However, I usually find time during the weekends to watch
-                            a couple of games.
-                        </p>
-                        <h3 class="heading">
-                            Video Games
-                        </h3>
-                        <p class="paragraph">
-                            I have always enjoyed playing video games. I still play it once in a while, but not as much as I used 
-                            to due to time constraints.
-                        </p>
-                    </div>
+                <div class="soft">
+                    <h1 class="display-6 mb-5">Soft Skills</h1>
+                    <ul class="soft__skills">
+                        <li>Communication</li>
+                        <li>Teamwork</li>
+                        <li>Time Management</li>
+                        <li>Critical Thinking</li>
+                        <li>Work Ethic</li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <section class="contact" id="contact">
-            <h1 class="heading-primary display-md-2 mb-5">How to reach me</h1>
-            <div class="contact__boxes">
-                <div class="contenu">
-                    <div class="icon">
-                        <i class="fas fa-at fa-2x"></i> 
-                    </div>
-                    <div class="contact-info">
-                        <a href="mailTo:chrismunoko@my.uwrf.edu" class="display-md-2">chris.munoko@my.uwrf.edu</a> 
-                    </div>
+        <div class="popup-button container">
+            <button id="toggle-button"> <a href="#popup_3"> More about me</a></button>
+        </div>
+    </section>
+    <!-- POPUP -->
+    <div class="popup" id="popup_3">
+        <div class="popup__content">
+            <div class=" popup__left">
+                <img src="./dist/images/side_image.jpg" alt="chris smiling" class="img-fluid photo">
+            </div>
+            <div class="popup__right">
+                <div class="popup__logo">
+                    <img src="./dist/images/logo.png" alt="chris' brand logo" class="img-fluid">
                 </div>
-                <div class="contenu">
-                    <div class="icon">
-                         <i class="fas fa-mobile fa-2x"></i> 
-                    </div>
-                    <div class="contact-info">
-                        <a class="display-md-4" href="tel:7155014852">715-501-4852</a> 
-                    </div>
-                </div>
-                <div class="contenu">
-                    <div class="icon">
-                            <i class="fas fa-location-arrow fa-2x"></i>
-                    </div>
-                    <div class="contact-info">
-                        <h1 class="display-md-4">234 South 3rd street, River Falls Wi</h1>
-                    </div>
+                <a href="#toggle-button" class="popup__close">&times;</a>
+                <div class="divider"></div>
+                <h1 class="heading-secondary display-4 my-3">I enjoy...</h1>
+                <div class="content">
+                    <h3 class="heading">
+                        Coding
+                    </h3>
+                    <p class="paragraph">
+                        I have always been fascinated by how computers work and what we can with them to impact today's
+                        society. That is why I chose Computer
+                        Science as my major. Although it can get frustrating at times, passion and curiosity continue to
+                        motivate me.
+                        I enjoy coding in Javascript and Java. I have used HTML, CSS and JavaScript to design websites
+                        for fun including
+                        this portfolio. I am familiar with SQL as well as noSQL databases.
+
+                    </p>
+                    <h3 class="heading">
+                        Soccer
+                    </h3>
+                    <p class="paragraph">
+                        Soccer has always been one of my favorite hobbies. I usually find time during the weekends to
+                        watch
+                        a couple of games, especially those of Real Madrid and Manchester United.
+                    </p>
+                    <h3 class="heading">
+                        Video Games
+                    </h3>
+                    <p class="paragraph">
+                        I have always enjoyed playing video games. I still play it once in a while, but not as much as I
+                        used
+                        to due to time constraints.
+                    </p>
                 </div>
             </div>
-        </section>
-        <footer class="main-footer">
-             <div class="content container ">
-                 <div class="img-logo">
-                        <img src="./dist/images/logo.png" width="60" height="60" alt="chris' brand logo">
-                 </div>
-                 <div class="socials d-flex justify-content-end">
-                    <a href="https://www.facebook.com/profile.php?id=100010404582839" target="_blank">
-                        <i class="fab fa-facebook fa-2x"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/chris-munoko-859559176/" target="_blank">
-                        <i class="fab fa-linkedin fa-2x"></i>
-                    </a>
-                    <a href="https://github.com/CM96" target="_blank">
-                        <i class="fab fa-github fa-2x"></i>
-                    </a>
-                    <a href="https://www.instagram.com/munokovic/?hl=en" target="_blank">
-                        <i class="fab fa-instagram fa-2x"></i>
-                    </a>
-                 </div>
-             </div>
-             <p> &copy; 2020 chris munoko. all rights reserved.</p>
-        </footer>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init({
-                offset: 100, // offset (in px) from the original trigger point
-                easing: 'ease-in-out', // default easing for AOS animations
-                duration: 1000, // values from 0 to 3000, with step 50ms
-            });
-          </script>
-        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-        <script src="./dist/js/app.js"></script>
-        
-    </body>
+        </div>
+    </div>
+    <footer class="main-footer">
+        <div class="content container ">
+            <div class="img-logo">
+                <img src="./dist/images/logo.png" width="60" height="60" alt="chris' brand logo">
+            </div>
+            <div class="socials d-flex justify-content-end">
+                <a href="https://www.facebook.com/profile.php?id=100010404582839" target="_blank">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/chris-munoko-859559176/" target="_blank">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://github.com/CM96" target="_blank">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a href="https://www.instagram.com/munokovic/?hl=en" target="_blank">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+            </div>
+        </div>
+        <p> &copy; 2020 chris munoko. all rights reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 100, // offset (in px) from the original trigger point
+            easing: 'ease-in-out', // default easing for AOS animations
+            duration: 1000, // values from 0 to 3000, with step 50ms
+        });
+    </script>
+    <script
+        src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="./dist/js/app.js"></script>
+
+</body>
+
 </html>
