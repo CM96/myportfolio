@@ -12,6 +12,6 @@
   "author": "Chris Munoko",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^7.0.0"
+    "node-sass": "^9.0.0"
   }
 }
